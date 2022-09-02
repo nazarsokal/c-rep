@@ -1,14 +1,10 @@
-//
-//  main.cpp
-//  project_git
-//
-//  Created by abb on 27.08.2022.
-//
-
 #include <iostream>
+#include "input.h"
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(int argc, const char * argv[]) 
+{
+  User user;
+  Input_Field inputF;
+  inputF.input(user.name, user.surname, user.birthday, user.country, user.username, user.password);
 }
